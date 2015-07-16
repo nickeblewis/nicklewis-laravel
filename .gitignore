@@ -9,7 +9,9 @@ composer.phar
 /public/appfiles/*/*
 /public/appfiles/*/*/*
 /public/build
-/public/css
+
+# /public/css
+
 /public/fonts
 /public/img
 /public/js
