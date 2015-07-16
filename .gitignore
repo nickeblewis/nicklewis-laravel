@@ -6,9 +6,9 @@ composer.phar
 /storage/debugbar
 
 # Builds paths (included to encourage builds)
-#/public/appfiles/*/*
-#/public/appfiles/*/*/*
-#/public/build
+/public/appfiles/*/*
+/public/appfiles/*/*/*
+/public/build
 
 # /public/css
 
