@@ -1,6 +1,7 @@
 var gulp = require("gulp");
 var bower = require("gulp-bower");
 var elixir = require("laravel-elixir");
+var BrowserSync = require('laravel-elixir-browsersync');
 
 gulp.task('bower', function() {
     return bower();
@@ -32,6 +33,9 @@ var paths = {
 elixir.config.sourcemaps = false;
 
 elixir(function (mix) {
+
+    BrowserSync.init();
+
 
     // Run bower install
     mix.task('bower');
@@ -97,5 +101,13 @@ elixir(function (mix) {
         'js/site.js',
         'js/admin.js'
     ]);
+
+    mix.BrowserSync({
+        proxy           : "nicklewis.dev",
+        logPrefix       : "Laravel Eixir BrowserSync",
+        logConnections  : false,
+        reloadOnRestart : false,
+        notify          : false
+    });
 });
 
