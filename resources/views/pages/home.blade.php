@@ -3,8 +3,10 @@
 @section('content')
 <div class="row">
     <div class="page-header">
-        <h2>Home Page</h2>
-    </div></div>
+        <h2>Hi there,</h2>
+    </div>
+    <h3>We are a small digital consultancy based in Farnborough. We build websites. We take pictures. We combine them. We create web applications with a difference. Let's work together...</h3>
+</div>
 
     @if(count($articles)>0)
         <div class="row">
